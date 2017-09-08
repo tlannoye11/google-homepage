@@ -1,0 +1,129 @@
+body {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.ul_top {
+    top: 0;
+}
+
+.ul_bottom {
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+li {
+    float: left;
+    /*border-right:1px solid #bbb;*/
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    /*color: white;*/
+    color: #666666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+.ul_top li a {
+    margin-top: 5px;
+}
+
+li a:hover:not(.active) {
+    /*background-color: #111;*/
+    text-decoration: underline;
+}
+
+li a img {
+    height: 25px;
+    width: 25px;
+    opacity: 0.5;
+}
+
+.ul_top li a img {
+    margin-top: -5px;
+}
+
+li a img:hover {
+    opacity: 1.0;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.li_right {
+    float: right;
+}
+
+#img_container {
+    width: 400px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search_form {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search_bar {
+    width: 400px;
+    height: 30px;
+    font-size: 16pt;
+    /*border: 0 1px 2px 1px solid #e5e6e8;*/
+    border-top: 0;
+    border-right: 1px solid #e5e6e8;
+    border-left: 1px solid #e5e6e8;
+    border-bottom: 2px solid #e5e6e8;
+    border-radius: 2px;
+    box-shadow: 2px #d3d3d3;
+    -moz-transition: border-color 0.3s, box-shadow: 0.3s;
+    -webkit-transition: border-color 0.3s, box-shadow: 0.3s;
+    transition: border-color 0.3s, box-shadow: 0.3s;
+}
+
+#search_bar:hover{
+    border-color:#a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+    box-shadow: 4px #d3d3d3;
+}
+
+.search_btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    color: #666666;
+    box-shadow: none;
+    border: none;
+    
+}
+
+#google_search_btn {
+    margin-left: 50px;
+}
